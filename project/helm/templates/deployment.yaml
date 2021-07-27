@@ -28,7 +28,7 @@ spec:
         image: {{ .Values.metadata.repoName }}:{{ .Values.metadata.imageTag }}
         imagePullPolicy: {{ .Values.metadata.imagePullPolicy }}
         name: {{ .Values.metadata.name }}
-      resources:
-        requests:
-          memory: {{ .Values.metadata.cpuRequest }}
-          cpu: {{ .Values.metadata.memoryRequest }}
+        resources:
+          requests:
+            memory: {{ .Values.metadata.cpuRequest }}
+            cpu: {{ .Values.metadata.memoryRequest }}
