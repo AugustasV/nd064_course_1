@@ -1,0 +1,13 @@
+metadata:
+  namespace: demo
+  replicas: 3
+  repoName: nginx   
+  imageTag: alpine
+  imagePullPolicy: IfNotPresent
+  cpuRequest: 60m
+  memoryRequest: 256Mi
+  ServiceType: ClusterIP
+  ServicePort: 8111
+  name: nginx
+  Configmap:
+    data: "version: alpine"

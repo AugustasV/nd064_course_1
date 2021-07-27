@@ -1,0 +1,10 @@
+metadata:
+  namespace: prod
+  replicas: 2
+  repoName: nginx   
+  imageTag: 1.17.0
+  cpuRequest: 70m
+  memoryRequest: 257Mi
+  name: nginx
+  Configmap:
+    data: "version: 1.17.0"

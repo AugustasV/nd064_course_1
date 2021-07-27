@@ -1,0 +1,12 @@
+metadata:
+  namespace: staging
+  replicas: 1
+  repoName: nginx   
+  imageTag: 1.18.0
+  cpuRequest: 50m
+  memoryRequest: 128Mi
+  ServiceType: ClusterIP
+  ServicePort: 8111
+  name: nginx
+  Configmap:
+    data: "version: 1.18.0"

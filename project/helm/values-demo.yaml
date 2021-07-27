@@ -1,0 +1,10 @@
+metadata:
+  name: demo
+spec:
+  tag: nginx-deploy
+  replicas: 3
+  template:
+    spec:
+      container:
+        name: nginx:alpine
+        imagePullPolicy: IfNotPresent
