@@ -30,5 +30,5 @@ spec:
         name: {{ .Values.metadata.name }}
         resources:
           requests:
-            memory: {{ .Values.metadata.cpuRequest }}
-            cpu: {{ .Values.metadata.memoryRequest }}
+            memory: {{ .Values.metadata.memoryRequest }}
+            cpu: {{ .Values.metadata.cpuRequest }}
